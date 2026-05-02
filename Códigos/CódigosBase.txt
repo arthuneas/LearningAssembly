@@ -25,7 +25,7 @@ Códigos para finalizar o programa:
     ecall
 
 
-Código para pular linha
+Código para pular linha:
     .data 
     nova_linha: .asciz "\n"
 
