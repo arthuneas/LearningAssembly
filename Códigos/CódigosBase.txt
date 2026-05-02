@@ -1,0 +1,52 @@
+Código para printar na tela:
+    .data
+        msg: .asciz "mensagem"
+
+    .text
+        li a7, 4
+        la a0, msg
+        ecall
+
+
+Código para scannear inteiros:
+    li a7, 5
+    ecall
+    mv [registrador que deseja armzenar o numero scanneado], a0 #move o temporário armzenado ao registrador desejado
+
+
+Códigos para finalizar o programa:
+    li a7, 10
+    ecall
+
+
+Código para pular linha
+    .data 
+    nova_linha: .asciz "\n"
+
+    .text 
+        li a7, 4
+        la a0, nova_linha
+        ecall
+
+
+Código para leitura de strings:
+    .data
+        nomeDigitado: .space 50
+
+    .text
+        li a7, 8
+        la a0, nomeDigitado -> carregamos o endereço de memória do buffer
+        li a1, 50 -> carrega um valor imediato para um registrador do mesmo tamanho do .space
+        ecall
+
+
+Código para leitura de char:
+    li a7, 12
+    ecall
+    mv t0, a0 -> adiciona o valor do char em um registrador desejado
+
+
+Código para imprimir um char:
+    li a7, 11
+    mv a0, t0 -> devolve o valor do [registrador de origem do char] ao registrador a0para imprimir
+    ecall

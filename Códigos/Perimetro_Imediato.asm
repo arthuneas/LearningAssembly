@@ -4,6 +4,7 @@
 .text
 main:
 	li t0, 15 #carrega o imediato/constante 15 em t0, base
+
 	li t1, 8 #carrega o imediato/constante 8 em t1, altura
 	
 	add t2, t0, t0 #dobra o valor de t0 e armazena em t2, altura
