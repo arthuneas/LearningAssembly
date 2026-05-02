@@ -1,4 +1,4 @@
-Código para printar na tela:
+Código para printar mensagens prontas na tela:
     .data
         msg: .asciz "mensagem"
 
@@ -12,6 +12,12 @@ Código para scannear inteiros:
     li a7, 5
     ecall
     mv [registrador que deseja armzenar o numero scanneado], a0 #move o temporário armzenado ao registrador desejado
+
+
+Código para imprimir inteiros:
+    li a7, 1
+    mv a0, [registrador do inteiro]
+    ecall
 
 
 Códigos para finalizar o programa:
