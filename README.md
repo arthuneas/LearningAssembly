@@ -62,7 +62,7 @@ Operações matemáticas básicas e gerenciamento de registradores:
 
 ---
 
-## Dicas 
+## Dicas
 
 ### - Regra da Pilha
 
@@ -105,16 +105,16 @@ Exemplo:
 
 ---
 
-##  Como Executar os Códigos
+## Como Executar os Códigos
 
 Para compilar e rodar os códigos Assembly diretamente pelo terminal do VS Code:
 
-### Pré-requisitos:
+### Pré-requisitos
 
 * Java instalado
 * Arquivo `rars1_6.jar` disponível no arquivo "Códigos"
 
-### Passo a passo:
+### Passo a passo
 
 1. Abra o terminal integrado do VS Code
 2. Navegue até a pasta dos códigos:
@@ -123,7 +123,7 @@ Para compilar e rodar os códigos Assembly diretamente pelo terminal do VS Code:
 cd ./LearningAssembly/Códigos
 ```
 
-3. Execute o programa:
+1. Execute o programa:
 
 ```bash
 java -jar ../rars1_6.jar seu_codigo.asm
