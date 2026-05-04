@@ -56,3 +56,6 @@ Código para imprimir um char:
     li a7, 11
     mv a0, t0 -> devolve o valor do [registrador de origem do char] ao registrador a0para imprimir
     ecall
+
+
+Código para 
